@@ -24,7 +24,7 @@ import torchvision.datasets as datasets
 
 import timm
 
-assert timm.__version__ == "0.3.2"  # version check
+# assert timm.__version__ == "0.3.2"  # version check
 import timm.optim.optim_factory as optim_factory
 
 import util.misc as misc
@@ -34,6 +34,7 @@ import models_mae
 
 from engine_pretrain import train_one_epoch
 
+from util.hdf5_loader import HDF5Dataset
 
 def get_args_parser():
     parser = argparse.ArgumentParser('MAE pre-training', add_help=False)
@@ -123,10 +124,11 @@ def main(args):
     transform_train = transforms.Compose([
             transforms.RandomResizedCrop(args.input_size, scale=(0.2, 1.0), interpolation=3),  # 3 is bicubic
             transforms.RandomHorizontalFlip(),
-            transforms.ToTensor(),
+            # transforms.ToTensor(),
             transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])])
-    dataset_train = datasets.ImageFolder(os.path.join(args.data_path, 'train'), transform=transform_train)
-    print(dataset_train)
+    # dataset_train = datasets.ImageFolder(os.path.join(args.data_path, 'train'), transform=transform_train)
+    dataset_train = HDF5Dataset(args.data_path, transform=transform_train)
+    # print(dataset_train)
 
     if True:  # args.distributed:
         num_tasks = misc.get_world_size()
@@ -151,7 +153,7 @@ def main(args):
         pin_memory=args.pin_mem,
         drop_last=True,
     )
-    
+    print("len(data_loader_train)", len(data_loader_train))
     # define the model
     model = models_mae.__dict__[args.model](norm_pix_loss=args.norm_pix_loss)
 

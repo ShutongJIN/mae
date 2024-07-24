@@ -1,0 +1,53 @@
+***************************************************
+You have loaded an anaconda module
+***************************************************
+
+JUST LOADING THIS MODULE DOES *NOT* CHANGE THE PYTHON VERSION, NOR ENABLES ANY
+EXTRA PYTHON MODULES.
+
+This module makes available the 'conda' command, with which users can create
+named anaconda environments and then activate them.
+
+To create and use a customized environment use 'conda create ...' and
+then 'conda activate ...' (see example below).
+
+---------------------------------------------------------------------------------------------------
+NOTE: NSC strongly advices against placing 'conda activate' (with or without
+arguments)
+      in your shell initialization files, (e.g. '.bashrc' or '.bash_profile')
+since this
+      severly alters the environment for running software in ways that cause
+unpredictable
+      issues that can be difficult to diagnose.
+---------------------------------------------------------------------------------------------------
+
+Example usage:
+
+  * Setting up a customized Anaconda environment and run a Python program in
+it:
+
+    conda create -n myenv python=3.8 scipy=1.5.2
+    conda activate myenv
+    python my_scipy_python_program.py
+
+  * To run the python program in the same environment when logging in the next
+time:
+
+    conda activate myenv
+    python my_scipy_python_program.py
+
+More details on Anaconda environment management here:
+
+
+https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+
+
+
+Traceback (most recent call last):
+  File "/home/x_shuji/mae/submitit_pretrain.py", line 15, in <module>
+    import main_pretrain as trainer
+  File "/home/x_shuji/mae/main_pretrain.py", line 21, in <module>
+    from torch.utils.tensorboard import SummaryWriter
+  File "/home/x_shuji/.conda/envs/data4robotics/lib/python3.9/site-packages/torch/utils/tensorboard/__init__.py", line 1, in <module>
+    import tensorboard
+ModuleNotFoundError: No module named 'tensorboard'
