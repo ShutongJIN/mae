@@ -21,6 +21,7 @@ import torch.backends.cudnn as cudnn
 from torch.utils.tensorboard import SummaryWriter
 import torchvision.transforms as transforms
 import torchvision.datasets as datasets
+import wandb
 
 import timm
 
@@ -185,6 +186,12 @@ def main(args):
 
     misc.load_model(args=args, model_without_ddp=model_without_ddp, optimizer=optimizer, loss_scaler=loss_scaler)
 
+    if misc.is_main_process():
+        wandb.init(project="mae_pretraining", config={
+            "learning_rate": args.lr,
+            "epochs": args.epochs,
+            "batch_size": args.batch_size,
+        })
     print(f"Start training for {args.epochs} epochs")
     start_time = time.time()
     for epoch in range(args.start_epoch, args.epochs):
@@ -194,7 +201,8 @@ def main(args):
             model, data_loader_train,
             optimizer, device, epoch, loss_scaler,
             log_writer=log_writer,
-            args=args
+            args=args,
+            wandb=wandb
         )
         if args.output_dir and (epoch % 20 == 0 or epoch + 1 == args.epochs):
             misc.save_model(
@@ -203,7 +211,7 @@ def main(args):
 
         log_stats = {**{f'train_{k}': v for k, v in train_stats.items()},
                         'epoch': epoch,}
-
+        
         if args.output_dir and misc.is_main_process():
             if log_writer is not None:
                 log_writer.flush()

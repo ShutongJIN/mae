@@ -1,0 +1,25 @@
+{
+    "os": "Linux-4.18.0-553.8.1.el8_10.x86_64-x86_64-with-glibc2.28",
+    "python": "3.9.19",
+    "heartbeatAt": "2024-07-31T17:56:25.997436",
+    "startedAt": "2024-07-31T17:56:25.371809",
+    "docker": null,
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "gpu_count": 8,
+    "cpu_count": 256,
+    "cuda": null,
+    "args": [
+        "/proj/cloudrobotics-nest/users/Stacking/dataset/CloudGripper_push_1k/Ball/pre_trained_weights"
+    ],
+    "state": "running",
+    "program": "-m submitit.core._submit",
+    "git": {
+        "remote": "https://github.com/ShutongJIN/mae.git",
+        "commit": "f3519a0940ac402c4f712be66292cd8a37fdd487"
+    },
+    "email": "shutong_jin@163.com",
+    "root": "/home/x_shuji/mae",
+    "host": "node092",
+    "username": "x_shuji",
+    "executable": "/home/x_shuji/.conda/envs/data4robotics/bin/python"
+}
