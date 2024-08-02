@@ -3,8 +3,8 @@ module load Anaconda/2021.05-nsc1
 conda activate data4robotics
 
 python submitit_pretrain.py \
-    --job_dir /proj/cloudrobotics-nest/users/Stacking/dataset/CloudGripper_push_1k/Ball/pre_trained_weights \
-    --nodes 1 \
+    --job_dir /proj/cloudrobotics-nest/users/Stacking/dataset/CloudGripper_push_1k/Ball/pre_trained_weights/vit_large \
+    --nodes 8 \
     --ngpus 8 \
     --partition berzelius \
     --batch_size 256 \
