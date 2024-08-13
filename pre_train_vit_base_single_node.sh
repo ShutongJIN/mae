@@ -14,4 +14,5 @@ python submitit_pretrain.py \
     --epochs 800 \
     --warmup_epochs 40 \
     --blr 1.5e-4 --weight_decay 0.05 \
-    --data_path /proj/cloudrobotics-nest/users/Stacking/dataset/CloudGripper_push_1k/Ball_Single_Top_hdf5
+    --data_path /proj/cloudrobotics-nest/users/Stacking/dataset/CloudGripper_push_1k/hdf5/ \
+    --resume /proj/cloudrobotics-nest/users/Stacking/dataset/CloudGripper_push_1k/Ball/pre_trained_weights/vit_base_single_node/checkpoint-20.pth
