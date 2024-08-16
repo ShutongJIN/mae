@@ -1,0 +1,68 @@
+2024-08-16 16:27:15,675 INFO    StreamThr :1025977 [internal.py:wandb_internal():88] W&B internal server running at pid: 1025977, started at: 2024-08-16 16:27:15.674613
+2024-08-16 16:27:15,677 DEBUG   HandlerThread:1025977 [handler.py:handle_request():138] handle_request: status
+2024-08-16 16:27:15,679 DEBUG   SenderThread:1025977 [sender.py:send_request():317] send_request: status
+2024-08-16 16:27:15,680 DEBUG   SenderThread:1025977 [sender.py:send():303] send: header
+2024-08-16 16:27:15,680 INFO    WriterThread:1025977 [datastore.py:open_for_write():75] open: /home/x_shuji/mae/wandb/run-20240816_162715-jzlhlwzi/run-jzlhlwzi.wandb
+2024-08-16 16:27:15,751 DEBUG   SenderThread:1025977 [sender.py:send():303] send: run
+2024-08-16 16:27:16,126 DEBUG   HandlerThread:1025977 [handler.py:handle_request():138] handle_request: check_version
+2024-08-16 16:27:16,129 INFO    SenderThread:1025977 [dir_watcher.py:__init__():216] watching files in: /home/x_shuji/mae/wandb/run-20240816_162715-jzlhlwzi/files
+2024-08-16 16:27:16,129 INFO    SenderThread:1025977 [sender.py:_start_run_threads():928] run started: jzlhlwzi with start time 1723818435.671134
+2024-08-16 16:27:16,129 DEBUG   SenderThread:1025977 [sender.py:send():303] send: summary
+2024-08-16 16:27:16,133 INFO    SenderThread:1025977 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2024-08-16 16:27:16,137 DEBUG   SenderThread:1025977 [sender.py:send_request():317] send_request: check_version
+2024-08-16 16:27:16,180 DEBUG   HandlerThread:1025977 [handler.py:handle_request():138] handle_request: run_start
+2024-08-16 16:27:16,200 DEBUG   HandlerThread:1025977 [meta.py:__init__():34] meta init
+2024-08-16 16:27:16,201 DEBUG   HandlerThread:1025977 [meta.py:__init__():49] meta init done
+2024-08-16 16:27:16,201 DEBUG   HandlerThread:1025977 [meta.py:probe():215] probe
+2024-08-16 16:27:16,216 DEBUG   HandlerThread:1025977 [meta.py:_setup_git():205] setup git
+2024-08-16 16:27:16,255 DEBUG   HandlerThread:1025977 [meta.py:_setup_git():212] setup git done
+2024-08-16 16:27:16,256 DEBUG   HandlerThread:1025977 [meta.py:_save_pip():53] save pip
+2024-08-16 16:27:16,295 DEBUG   HandlerThread:1025977 [meta.py:_save_pip():67] save pip done
+2024-08-16 16:27:16,296 DEBUG   HandlerThread:1025977 [meta.py:_save_conda():74] save conda
+2024-08-16 16:27:17,131 INFO    Thread-12 :1025977 [dir_watcher.py:_on_file_created():275] file/dir created: /home/x_shuji/mae/wandb/run-20240816_162715-jzlhlwzi/files/conda-environment.yaml
+2024-08-16 16:27:17,132 INFO    Thread-12 :1025977 [dir_watcher.py:_on_file_created():275] file/dir created: /home/x_shuji/mae/wandb/run-20240816_162715-jzlhlwzi/files/wandb-summary.json
+2024-08-16 16:27:17,132 INFO    Thread-12 :1025977 [dir_watcher.py:_on_file_created():275] file/dir created: /home/x_shuji/mae/wandb/run-20240816_162715-jzlhlwzi/files/requirements.txt
+2024-08-16 16:27:29,112 DEBUG   HandlerThread:1025977 [meta.py:_save_conda():84] save conda done
+2024-08-16 16:27:29,113 DEBUG   HandlerThread:1025977 [meta.py:probe():253] probe done
+2024-08-16 16:27:29,196 INFO    Thread-12 :1025977 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240816_162715-jzlhlwzi/files/conda-environment.yaml
+2024-08-16 16:27:29,196 INFO    Thread-12 :1025977 [dir_watcher.py:_on_file_created():275] file/dir created: /home/x_shuji/mae/wandb/run-20240816_162715-jzlhlwzi/files/wandb-metadata.json
+2024-08-16 16:27:29,308 DEBUG   HandlerThread:1025977 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-16 16:27:29,308 DEBUG   SenderThread:1025977 [sender.py:send_request():317] send_request: stop_status
+2024-08-16 16:27:29,557 DEBUG   SenderThread:1025977 [sender.py:send():303] send: telemetry
+2024-08-16 16:27:29,560 DEBUG   SenderThread:1025977 [sender.py:send():303] send: files
+2024-08-16 16:27:29,560 INFO    SenderThread:1025977 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2024-08-16 16:27:30,056 INFO    Thread-16 :1025977 [upload_job.py:push():143] Uploaded file /tmp/tmpwr35aqzewandb/x4htvm5i-wandb-metadata.json
+2024-08-16 16:27:30,198 INFO    Thread-12 :1025977 [dir_watcher.py:_on_file_created():275] file/dir created: /home/x_shuji/mae/wandb/run-20240816_162715-jzlhlwzi/files/output.log
+2024-08-16 16:27:32,200 INFO    Thread-12 :1025977 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240816_162715-jzlhlwzi/files/output.log
+2024-08-16 16:27:41,188 DEBUG   HandlerThread:1025977 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-16 16:27:41,188 DEBUG   SenderThread:1025977 [sender.py:send_request():317] send_request: stop_status
+2024-08-16 16:27:47,202 DEBUG   SenderThread:1025977 [sender.py:send():303] send: stats
+2024-08-16 16:27:47,219 INFO    Thread-12 :1025977 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240816_162715-jzlhlwzi/files/config.yaml
+2024-08-16 16:28:01,190 DEBUG   HandlerThread:1025977 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-16 16:28:01,190 DEBUG   SenderThread:1025977 [sender.py:send_request():317] send_request: stop_status
+2024-08-16 16:28:16,396 DEBUG   HandlerThread:1025977 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-16 16:28:16,396 DEBUG   SenderThread:1025977 [sender.py:send_request():317] send_request: stop_status
+2024-08-16 16:28:20,394 DEBUG   SenderThread:1025977 [sender.py:send():303] send: stats
+2024-08-16 16:28:31,608 DEBUG   HandlerThread:1025977 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-16 16:28:31,609 DEBUG   SenderThread:1025977 [sender.py:send_request():317] send_request: stop_status
+2024-08-16 16:28:46,844 DEBUG   HandlerThread:1025977 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-16 16:28:46,845 DEBUG   SenderThread:1025977 [sender.py:send_request():317] send_request: stop_status
+2024-08-16 16:28:53,526 DEBUG   SenderThread:1025977 [sender.py:send():303] send: stats
+2024-08-16 16:29:02,106 DEBUG   HandlerThread:1025977 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-16 16:29:02,107 DEBUG   SenderThread:1025977 [sender.py:send_request():317] send_request: stop_status
+2024-08-16 16:29:17,614 DEBUG   HandlerThread:1025977 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-16 16:29:17,614 DEBUG   SenderThread:1025977 [sender.py:send_request():317] send_request: stop_status
+2024-08-16 16:29:29,022 DEBUG   SenderThread:1025977 [sender.py:send():303] send: stats
+2024-08-16 16:29:37,614 DEBUG   HandlerThread:1025977 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-16 16:29:37,615 DEBUG   SenderThread:1025977 [sender.py:send_request():317] send_request: stop_status
+2024-08-16 16:29:52,815 DEBUG   HandlerThread:1025977 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-16 16:29:52,816 DEBUG   SenderThread:1025977 [sender.py:send_request():317] send_request: stop_status
+2024-08-16 16:30:04,265 DEBUG   SenderThread:1025977 [sender.py:send():303] send: stats
+2024-08-16 16:30:12,816 DEBUG   HandlerThread:1025977 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-16 16:30:12,816 DEBUG   SenderThread:1025977 [sender.py:send_request():317] send_request: stop_status
+2024-08-16 16:30:20,463 INFO    Thread-12 :1025977 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240816_162715-jzlhlwzi/files/output.log
+2024-08-16 16:30:28,042 DEBUG   HandlerThread:1025977 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-16 16:30:28,042 DEBUG   SenderThread:1025977 [sender.py:send_request():317] send_request: stop_status
+2024-08-16 16:30:32,996 DEBUG   SenderThread:1025977 [sender.py:send():303] send: stats
+2024-08-16 16:30:43,296 DEBUG   HandlerThread:1025977 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-16 16:30:43,296 DEBUG   SenderThread:1025977 [sender.py:send_request():317] send_request: stop_status

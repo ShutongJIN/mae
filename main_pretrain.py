@@ -102,6 +102,8 @@ def get_args_parser():
     parser.add_argument('--dist_on_itp', action='store_true')
     parser.add_argument('--dist_url', default='env://',
                         help='url used to set up distributed training')
+    parser.add_argument('--max_images', default=1500000, type=int,
+                        help='Maximum number of images to load from the dataset.')
 
     return parser
 
@@ -128,7 +130,7 @@ def main(args):
             # transforms.ToTensor(),
             transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])])
     # dataset_train = datasets.ImageFolder(os.path.join(args.data_path, 'train'), transform=transform_train)
-    dataset_train = HDF5Dataset(args.data_path, transform=transform_train)
+    dataset_train = HDF5Dataset(args.data_path, transform=transform_train, max_images=args.max_images)
     # print(dataset_train)
 
     if True:  # args.distributed:
@@ -202,9 +204,10 @@ def main(args):
             optimizer, device, epoch, loss_scaler,
             log_writer=log_writer,
             args=args,
-            wandb=wandb
+            wandb=wandb,
+            global_step=epoch
         )
-        if args.output_dir and (epoch % 20 == 0 or epoch + 1 == args.epochs):
+        if args.output_dir and (epoch % 5 == 0 or epoch + 1 == args.epochs):
             misc.save_model(
                 args=args, model=model, model_without_ddp=model_without_ddp, optimizer=optimizer,
                 loss_scaler=loss_scaler, epoch=epoch)

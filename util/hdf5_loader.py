@@ -5,20 +5,22 @@ from torchvision import transforms
 import os
 
 class HDF5Dataset(Dataset):
-    def __init__(self, folder_path, transform=None):
+    def __init__(self, folder_path, transform=None, max_images=None):
         """
         Args:
             folder_path (string): Path to the folder containing hdf5 files.
             transform (callable, optional): Optional transform to be applied on a sample.
+            max_images (int, optional): Maximum number of images to load from the dataset.
         """
         self.folder_path = folder_path
         self.transform = transform
         self.image_offsets = []
         self.total_images = 0
+        self.max_images = max_images
         self.load_metadata()
 
     def load_metadata(self):
-        """Load metadata from HDF5 files to build index of images."""
+        """Load metadata from HDF5 files to build an index of images."""
         for file in sorted(os.listdir(self.folder_path)):
             if file.endswith('.hdf5'):
                 file_path = os.path.join(self.folder_path, file)
@@ -30,8 +32,22 @@ class HDF5Dataset(Dataset):
                             for dataset_name in suffix_group.keys():
                                 dataset = suffix_group[dataset_name]
                                 num_images = len(dataset)
-                                self.image_offsets.append((file_path, video_id, suffix, dataset_name, self.total_images, self.total_images + num_images))
-                                self.total_images += num_images
+                                # Check if adding these images would exceed the max_images limit
+                                if self.max_images is not None and self.total_images + num_images > self.max_images:
+                                    # Calculate how many images are needed to reach the max_images limit
+                                    remaining_images = self.max_images - self.total_images
+                                    if remaining_images > 0:
+                                        self.image_offsets.append(
+                                            (file_path, video_id, suffix, dataset_name, self.total_images, self.total_images + remaining_images)
+                                        )
+                                    self.total_images = self.max_images
+                                    print(f"Total images: {self.total_images}")
+                                    return
+                                else:
+                                    self.image_offsets.append(
+                                        (file_path, video_id, suffix, dataset_name, self.total_images, self.total_images + num_images)
+                                    )
+                                    self.total_images += num_images
         print(f"Total images: {self.total_images}")
 
     def __len__(self):

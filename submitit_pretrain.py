@@ -40,8 +40,8 @@ def parse_args():
 #     raise RuntimeError("No shared folder available")
 
 def get_shared_folder() -> Path:
-    if Path("/proj/cloudrobotics-nest/users/Stacking/dataset/CloudGripper_push_1k/Ball/pre_trained_weights").is_dir():
-        p = Path(f"/proj/cloudrobotics-nest/users/Stacking/dataset/CloudGripper_push_1k/Ball/pre_trained_weights")
+    if Path("/proj/cloudrobotics-nest/users/Stacking/dataset/CloudGripper_push_1k/pre_trained_weights").is_dir():
+        p = Path(f"/proj/cloudrobotics-nest/users/Stacking/dataset/CloudGripper_push_1k/mae")
         p.mkdir(exist_ok=True)
         return p
     raise RuntimeError("No shared folder available")

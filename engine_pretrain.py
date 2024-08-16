@@ -23,7 +23,8 @@ def train_one_epoch(model: torch.nn.Module,
                     device: torch.device, epoch: int, loss_scaler,
                     log_writer=None,
                     args=None,
-                    wandb=None):
+                    wandb=None,
+                    global_step=0):
     model.train(True)
     metric_logger = misc.MetricLogger(delimiter="  ")
     metric_logger.add_meter('lr', misc.SmoothedValue(window_size=1, fmt='{value:.6f}'))
@@ -88,5 +89,5 @@ def train_one_epoch(model: torch.nn.Module,
     print("Averaged stats:", metric_logger)
     # wandb.log({k: meter.global_avg for k, meter in metric_logger.meters.items()})
     if wandb is not None and misc.is_main_process():
-        wandb.log({k: meter.global_avg for k, meter in metric_logger.meters.items()})
+        wandb.log({k: meter.global_avg for k, meter in metric_logger.meters.items()}, step=global_step)
     return {k: meter.global_avg for k, meter in metric_logger.meters.items()}

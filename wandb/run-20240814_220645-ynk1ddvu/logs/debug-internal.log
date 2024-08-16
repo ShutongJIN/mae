@@ -1,0 +1,225 @@
+2024-08-14 22:06:45,659 INFO    StreamThr :1005294 [internal.py:wandb_internal():88] W&B internal server running at pid: 1005294, started at: 2024-08-14 22:06:45.658855
+2024-08-14 22:06:45,661 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: status
+2024-08-14 22:06:45,664 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: status
+2024-08-14 22:06:45,672 DEBUG   SenderThread:1005294 [sender.py:send():303] send: header
+2024-08-14 22:06:45,673 INFO    WriterThread:1005294 [datastore.py:open_for_write():75] open: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/run-ynk1ddvu.wandb
+2024-08-14 22:06:45,773 DEBUG   SenderThread:1005294 [sender.py:send():303] send: run
+2024-08-14 22:06:46,185 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: check_version
+2024-08-14 22:06:46,190 INFO    SenderThread:1005294 [dir_watcher.py:__init__():216] watching files in: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files
+2024-08-14 22:06:46,190 INFO    SenderThread:1005294 [sender.py:_start_run_threads():928] run started: ynk1ddvu with start time 1723666005.669826
+2024-08-14 22:06:46,190 DEBUG   SenderThread:1005294 [sender.py:send():303] send: summary
+2024-08-14 22:06:46,192 INFO    SenderThread:1005294 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2024-08-14 22:06:46,193 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: check_version
+2024-08-14 22:06:46,274 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: run_start
+2024-08-14 22:06:46,319 DEBUG   HandlerThread:1005294 [meta.py:__init__():34] meta init
+2024-08-14 22:06:46,319 DEBUG   HandlerThread:1005294 [meta.py:__init__():49] meta init done
+2024-08-14 22:06:46,319 DEBUG   HandlerThread:1005294 [meta.py:probe():215] probe
+2024-08-14 22:06:46,337 DEBUG   HandlerThread:1005294 [meta.py:_setup_git():205] setup git
+2024-08-14 22:06:46,372 DEBUG   HandlerThread:1005294 [meta.py:_setup_git():212] setup git done
+2024-08-14 22:06:46,372 DEBUG   HandlerThread:1005294 [meta.py:_save_pip():53] save pip
+2024-08-14 22:06:46,374 DEBUG   HandlerThread:1005294 [meta.py:_save_pip():67] save pip done
+2024-08-14 22:06:46,374 DEBUG   HandlerThread:1005294 [meta.py:_save_conda():74] save conda
+2024-08-14 22:06:47,195 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_created():275] file/dir created: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/conda-environment.yaml
+2024-08-14 22:06:47,195 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_created():275] file/dir created: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/requirements.txt
+2024-08-14 22:06:47,195 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_created():275] file/dir created: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/wandb-summary.json
+2024-08-14 22:06:56,562 DEBUG   HandlerThread:1005294 [meta.py:_save_conda():84] save conda done
+2024-08-14 22:06:56,562 DEBUG   HandlerThread:1005294 [meta.py:probe():253] probe done
+2024-08-14 22:06:56,784 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:06:56,784 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:06:57,044 DEBUG   SenderThread:1005294 [sender.py:send():303] send: telemetry
+2024-08-14 22:06:57,047 DEBUG   SenderThread:1005294 [sender.py:send():303] send: files
+2024-08-14 22:06:57,047 INFO    SenderThread:1005294 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2024-08-14 22:06:57,236 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/conda-environment.yaml
+2024-08-14 22:06:57,236 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_created():275] file/dir created: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:06:57,236 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_created():275] file/dir created: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/wandb-metadata.json
+2024-08-14 22:06:57,525 INFO    Thread-16 :1005294 [upload_job.py:push():143] Uploaded file /tmp/tmpokq_rzi0wandb/1wtfdopg-wandb-metadata.json
+2024-08-14 22:06:59,240 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:07:11,246 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:07:11,247 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:07:17,319 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/config.yaml
+2024-08-14 22:07:24,236 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:07:26,440 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:07:26,441 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:07:35,360 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:07:41,623 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:07:41,623 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:07:56,887 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:07:56,887 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:07:57,402 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:08:04,330 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:08:12,116 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:08:12,117 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:08:27,378 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:08:27,378 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:08:42,604 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:08:42,605 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:08:45,876 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:08:57,854 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:08:57,855 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:09:05,541 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:09:21,229 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:09:21,230 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:09:28,078 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:09:42,319 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:09:42,319 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:09:43,614 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:09:57,714 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:09:57,714 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:10:09,630 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:10:15,007 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:10:15,007 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:10:35,991 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:10:35,992 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:10:51,762 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:10:51,780 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:11:00,167 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:11:00,168 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:11:16,683 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:11:16,684 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:11:34,073 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:11:35,648 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:11:35,649 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:11:45,909 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:11:54,164 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:11:54,164 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:12:11,495 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:12:11,495 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:12:15,847 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:12:27,758 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:12:27,758 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:12:39,981 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:12:51,914 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:12:51,914 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:12:57,513 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:13:20,587 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:13:20,587 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:13:30,072 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:13:39,282 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:13:43,743 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:13:43,744 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:14:12,154 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:14:12,155 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:14:18,145 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:14:20,563 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:14:37,948 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:14:37,949 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:15:01,200 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:15:01,201 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:15:02,003 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:15:06,233 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:15:26,366 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:15:26,366 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:15:43,726 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:15:53,327 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:15:53,327 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:15:58,284 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:16:18,455 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:16:18,455 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:16:25,257 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:16:43,333 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:16:43,333 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:16:48,365 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:17:06,715 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:17:09,420 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:17:09,420 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:17:34,345 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:17:34,345 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:17:38,467 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:17:48,493 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:18:00,872 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:18:00,872 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:18:24,314 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:18:24,315 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:18:30,077 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:18:36,556 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:18:45,515 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:18:45,515 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:19:11,660 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:19:13,107 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:19:13,107 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:19:24,627 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:19:34,527 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:19:34,527 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:19:53,276 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:20:01,912 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:20:01,912 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:20:14,709 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:20:26,083 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:20:26,084 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:20:34,758 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:20:49,454 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:20:49,455 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:21:04,800 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:21:16,408 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:21:25,990 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:21:25,990 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:21:49,442 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:21:49,442 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:21:54,878 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:21:58,354 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:22:17,208 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:22:17,208 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:22:39,942 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:22:43,088 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:22:43,088 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:22:46,997 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:23:07,067 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:23:07,067 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:23:21,670 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:23:33,598 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:23:33,598 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:23:39,085 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:23:57,283 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:23:57,283 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:24:03,228 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:24:23,752 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:24:23,753 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:24:29,151 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:24:45,029 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:24:48,368 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:24:48,368 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:25:14,456 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:25:14,456 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:25:18,234 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:25:26,893 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:25:39,341 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:25:39,341 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:26:04,699 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:26:04,699 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:26:08,314 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:26:08,694 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:26:32,098 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:26:32,098 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:26:50,409 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:26:57,960 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:26:57,960 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:27:02,424 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:27:22,667 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:27:22,668 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:27:32,137 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:27:50,229 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:27:50,229 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:27:54,521 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:28:13,462 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:28:16,370 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:28:16,370 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:28:41,497 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:28:41,497 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:28:44,638 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:28:55,188 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:29:03,366 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:29:03,366 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:29:27,511 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:29:27,511 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:29:30,691 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:29:36,874 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:29:54,023 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:29:54,023 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:30:17,557 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:30:17,559 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:30:18,620 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats
+2024-08-14 22:30:20,807 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:30:40,375 DEBUG   HandlerThread:1005294 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-14 22:30:40,375 DEBUG   SenderThread:1005294 [sender.py:send_request():317] send_request: stop_status
+2024-08-14 22:30:42,833 INFO    Thread-12 :1005294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/files/output.log
+2024-08-14 22:31:00,402 DEBUG   SenderThread:1005294 [sender.py:send():303] send: stats

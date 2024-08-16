@@ -1,0 +1,26 @@
+2024-08-14 22:06:45,647 INFO    MainThread:998188 [wandb_setup.py:_flush():68] Configure stats pid to 998188
+2024-08-14 22:06:45,648 INFO    MainThread:998188 [wandb_setup.py:_flush():68] Loading settings from /home/x_shuji/.config/wandb/settings
+2024-08-14 22:06:45,648 INFO    MainThread:998188 [wandb_setup.py:_flush():68] Loading settings from /home/x_shuji/mae/wandb/settings
+2024-08-14 22:06:45,648 INFO    MainThread:998188 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2024-08-14 22:06:45,648 WARNING MainThread:998188 [wandb_setup.py:_flush():68] Could not find program at -m submitit.core._submit
+2024-08-14 22:06:45,648 INFO    MainThread:998188 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': None, 'program': '-m submitit.core._submit'}
+2024-08-14 22:06:45,648 INFO    MainThread:998188 [wandb_init.py:_log_setup():476] Logging user logs to /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/logs/debug.log
+2024-08-14 22:06:45,648 INFO    MainThread:998188 [wandb_init.py:_log_setup():477] Logging internal logs to /home/x_shuji/mae/wandb/run-20240814_220645-ynk1ddvu/logs/debug-internal.log
+2024-08-14 22:06:45,648 INFO    MainThread:998188 [wandb_init.py:init():516] calling init triggers
+2024-08-14 22:06:45,648 INFO    MainThread:998188 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.0012, 'epochs': 800, 'batch_size': 256}
+2024-08-14 22:06:45,648 INFO    MainThread:998188 [wandb_init.py:init():569] starting backend
+2024-08-14 22:06:45,648 INFO    MainThread:998188 [wandb_init.py:init():573] setting up manager
+2024-08-14 22:06:45,650 INFO    MainThread:998188 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-08-14 22:06:45,669 INFO    MainThread:998188 [wandb_init.py:init():580] backend started and connected
+2024-08-14 22:06:45,672 INFO    MainThread:998188 [wandb_init.py:init():658] updated telemetry
+2024-08-14 22:06:45,772 INFO    MainThread:998188 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2024-08-14 22:06:46,183 INFO    MainThread:998188 [wandb_run.py:_on_init():2000] communicating current version
+2024-08-14 22:06:46,224 INFO    MainThread:998188 [wandb_run.py:_on_init():2004] got version response upgrade_message: "wandb version 0.17.6 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-08-14 22:06:46,224 INFO    MainThread:998188 [wandb_init.py:init():728] starting run threads in backend
+2024-08-14 22:06:51,245 INFO    MainThread:998188 [wandb_run.py:_console_start():1980] atexit reg
+2024-08-14 22:06:51,246 INFO    MainThread:998188 [wandb_run.py:_redirect():1838] redirect: SettingsConsole.WRAP_RAW
+2024-08-14 22:06:51,246 INFO    MainThread:998188 [wandb_run.py:_redirect():1903] Wrapping output streams.
+2024-08-14 22:06:51,246 INFO    MainThread:998188 [wandb_run.py:_redirect():1925] Redirects installed.
+2024-08-14 22:06:51,246 INFO    MainThread:998188 [wandb_init.py:init():765] run started, returning control to user process
