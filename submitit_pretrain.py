@@ -15,6 +15,8 @@ from pathlib import Path
 import main_pretrain as trainer
 import submitit
 
+#!/bin/bash
+#SBATCH -t 1-00:00:00
 
 def parse_args():
     trainer_parser = trainer.get_args_parser()

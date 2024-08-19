@@ -15,4 +15,5 @@ python submitit_pretrain.py \
     --warmup_epochs 40 \
     --blr 1.5e-4 --weight_decay 0.05 \
     --data_path /proj/cloudrobotics-nest/users/Stacking/dataset/CloudGripper_push_1k/hdf5/ \
-    --max_images 1500000 
+    --max_images 1500000 \
+    --resume /proj/cloudrobotics-nest/users/Stacking/dataset/CloudGripper_push_1k/mae/vit_base_1_5M/checkpoint-60.pth
